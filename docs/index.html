@@ -1,9 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="timer.css">
+    <script src="client-bundle.js"></script>
   </head>
   <body>
-    <div class="app"></div>
-    <script src="client-bundle.js"></script>
+    <h1>Pomodoro Timer</h1>
+    <div class="c-timer">
+      <div class="c-timer__progress">
+        <div class="c-timer__progress-time">0:00</div>
+        <div class="c-timer__progress-bar">&nbsp;</div>
+      </div>
+      <div class="c-timer__controls">
+        <button class="c-timer__start-button">Start</button>
+        <button class="c-timer__pause-button">Pause</button>
+        <button class="c-timer__restart-button">Restart</button>
+      </div>
+    </div>
   </body>
 </html>

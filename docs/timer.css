@@ -1,0 +1,56 @@
+/**
+ * Pomodoro Timer styling
+ *
+ * @copyright Bill Robitske, Jr. 2017
+ * @author Bill Robitske, Jr. <bill.robitske.jr@gmail.com>
+ * @license MIT
+ */
+.c-timer {
+  display: inline-block;
+  width: 300px;
+}
+.c-timer__progress {
+  display: block;
+  position: relative;
+  text-align: center;
+  margin: 10px 0px;
+  border: 2px solid black;
+  border-radius: 0.25em;
+  background-color: green;
+}
+.c-timer__progress-time {
+  display: block;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  color: white;
+}
+.c-timer__progress-bar {
+  display: block;
+  position: relative;
+  width: 100%;
+  background-color: blue;
+  transform: scaleX(1);
+}
+.c-timer__progress:not(.is-break) .c-timer__progress-bar {
+  transform-origin: left;
+}
+.c-timer__progress.is-break .c-timer__progress-bar {
+  transform-origin: right;
+}
+.c-timer__controls {
+  display: block;
+  text-align: center;
+}
+.c-timer__start-button {
+
+}
+.c-timer__pause-button {
+
+}
+.c-timer__restart-button {
+
+}
